@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+  <!-- Hero Section -->
+  <div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center" style="background-image: url({% static 'assets/img/gallery/section_bg02.png' %}); background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="hero-cap hero-cap2 pt-20">
+              <h2>Social Events</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Counter Section -->
+  <section class="count-down-area pt-25 section-bg" style="background-image: url({% static 'assets/img/gallery/section_bg02.png' %});">
+    <div class="container">
+      <div class="row justify-content-center">
+        {% for stat in stats %}
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+          <div class="single-counter text-center">
+            <span class="counter color-green">{{ stat.value }}</span>
+            <span class="plus">+</span>
+            <p class="color-green">{{ stat.label }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery Section -->
+  <section class="video-gallery section-padding">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2>Children in Action</h2>
+          <p>Watch how our children play, learn, and eat</p>
+        </div>
+      </div>
+      <div class="row">
+        {% for video in videos %}
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="video-card mx-auto">
+            <video controls preload="metadata" poster="{% static 'assets/videos/' %}{{ video.poster }}" class="w-100 rounded">
+              <source src="{% static 'assets/videos/' %}{{ video.src }}" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <h5 class="mt-2 text-center">{{ video.title }}</h5>
+          </div>
+        </div>
+        {% empty %}
+        <p class="text-center w-100">No videos available at the moment.</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+<style>
+  /* Video Gallery Styling */
+  .video-gallery .video-card {
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .video-gallery .video-card:hover {
+    transform: scale(1.02);
+  }
+
+  .video-gallery .video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .video-gallery .video-card h5 {
+    margin-top: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  @media (max-width: 991px) {
+    .video-gallery .video-card {
+      max-width: 100%;
+    }
+  }
+</style>

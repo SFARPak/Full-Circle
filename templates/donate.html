@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+  <!-- Hero Section -->
+  <div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center" style="background-image: url({% static 'assets/img/gallery/section_bg02.png' %}); background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="hero-cap hero-cap2 pt-20">
+              <h2>Donate Now</h2>
+              <p class="lead mt-3">Support our mission by contributing through the following bank details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bank Details Section -->
+  <section class="bank-details section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card p-4 shadow-sm">
+            <h4 class="mb-4 text-center">Bank Transfer Information</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>Bank</strong></span>
+                <span>Meezan Bank</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>Account No</strong></span>
+                <span>0263-0107290460</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>IBAN</strong></span>
+                <span>PK55MEZN0002630107290460</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span><strong>Title</strong></span>
+                <span>FULL CIRCLE FOUNDATION</span>
+              </li>
+            </ul>
+            <div class="text-center mt-4">
+              <a href="{% url 'donate' %}" class="btn btn-primary btn-lg">Confirm Donation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

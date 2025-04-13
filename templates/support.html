@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+  <!-- Hero Section -->
+  <div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center" style="background-image: url({% static 'assets/img/gallery/section_bg02.png' %}); background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="hero-cap hero-cap2 pt-20">
+              <h2>How to Support</h2>
+              <p class="lead mt-3">Join us in empowering children with special needs through your generosity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Support Matters -->
+  <section class="support-intro section-padding">
+    <div class="container">
+      <h3 class="mb-4">Why Your Support Matters</h3>
+      <p>At <strong>FULL CIRCLE</strong>, we believe that every child deserves the opportunity to learn, grow, and thrive, regardless of their abilities or circumstances. Our mission is to provide quality education, therapy, and vocational training to children with special needs, enabling them to lead independent and fulfilling lives.</p>
+      <p>However, we cannot do this alone. Many of our students come from families facing financial hardships, and their access to essential learning resources depends on the generosity of donors like you.</p>
+    </div>
+  </section>
+
+  <!-- Impact Statistics -->
+  <section class="impact-stats bg-light section-padding">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <h2 class="counter">120</h2>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h2 class="counter">85%</h2>
+          <p>Improvement Rate</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h2 class="counter">50+</h2>
+          <p>Therapy Sessions</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h2 class="counter">30</h2>
+          <p>Vocational Graduates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Opportunities -->
+  <section class="donation-opps section-padding">
+    <div class="container">
+      <h3 class="mb-4 text-center">Your Zakat &amp; Sadaqah Can Make a Difference</h3>
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item">Provide scholarships for underprivileged special children</li>
+        <li class="list-group-item">Fund specialized therapy sessions</li>
+        <li class="list-group-item">Equip classrooms with learning aids and assistive technology</li>
+        <li class="list-group-item">Support vocational training programs for self-sufficiency</li>
+      </ul>
+      <div class="text-center">
+        <a href="{%url 'donate'%}" class="btn btn-lg btn-success">Donate Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials bg-light section-padding">
+    <div class="container">
+      <h3 class="mb-5 text-center">Stories of Impact</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <p>“Thanks to Full Circle, my son can now read and write independently. We are forever grateful!”</p>
+            <h5 class="mt-3 mb-0">— Aisha, Parent</h5>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <p>“The vocational program gave me skills to earn a living. I feel empowered and hopeful.”</p>
+            <h5 class="mt-3 mb-0">— Ahmed, Graduate</h5>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <p>“Therapy sessions transformed my daughter’s confidence and social skills. Thank you!”</p>
+            <h5 class="mt-3 mb-0">— Fatima, Parent</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Volunteer -->
+  <section class="contact-volunteer section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>Get Involved</h4>
+          <p>Volunteer your time or expertise to support our programs. Whether you’re a teacher, therapist, or skilled professional, your contribution makes a real difference.</p>
+          <a href="" class="btn btn-outline-primary">Become a Volunteer</a>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Contact Us</h4>
+          <p>Have questions? Reach out to our team for more information on how you can support.</p>
+          <p><i class="fas fa-phone-alt"></i> +92-301-846-6621 <br><i class="fas fa-envelope"></i> info@fullcircle.org.pk</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
