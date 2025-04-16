@@ -13,8 +13,45 @@ def blog(request):
 def blog_details(request):
     return render(request, 'templates/blog_details.html')
 
-def contact(request):
-    return render(request, 'templates/contact.html')
+# app/views.py
+from django.conf import settings
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import ContactForm
+
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject'] or 'Contact Form Submission'
+            message = form.cleaned_data['message']
+
+            full_message = (
+                f"You have a new contact form submission:\n\n"
+                f"Name: {name}\n"
+                f"Email: {email}\n"
+                f"Subject: {subject}\n\n"
+                f"Message:\n{message}"
+            )
+
+            send_mail(
+                subject,
+                full_message,
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.CONTACT_RECIPIENT_EMAIL],
+                fail_silently=False,
+            )
+
+            messages.success(request, 'Thank you! Your message has been sent.')
+            return redirect('contact')
+    else:
+        form = ContactForm()
+
+    return render(request, 'templates/contact.html', {'form': form})
 
 def elements(request):
     return render(request, 'templates/elements.html')
