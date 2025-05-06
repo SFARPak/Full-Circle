@@ -10,50 +10,43 @@
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInUp" data-delay=".6s">Educating the <br> Children</h1>
-                                <P data-animation="fadeInUp" data-delay=".8s " style="font-size: 16px"> “There is not the slightest shame in asking your community’s institutions for help to
-                                    educate your children or for their health. Your children are the children of the
-                                    community. They are the citizens of the future…
-                                    Haji Dawood Adamjee </P>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn">
-                                    <a href="{%url 'donate'%}" class="btn hero-btn mb-10"  data-animation="fadeInLeft" data-delay=".8s">Donate</a>
-                                    <a href="{%url 'donate'%}" class="cal-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">
-                                        <i class="flaticon-null"></i>
-                                        <p> +92-309-537-4626</p>
-                                    </a>
-                                </div>
-                            </div>
+                  <div class="row">
+                    <!-- Left column: text -->
+                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
+                      <div class="hero__caption">
+                        <h1 data-animation="fadeInUp" data-delay=".6s">
+                          Educating the <br> Children
+                        </h1>
+                        <p data-animation="fadeInUp" data-delay=".8s" style="font-size: 16px">
+                          “There is not the slightest shame in asking your community’s institutions for help to
+                          educate your children or for their health. Your children are the children of the
+                          community. They are the citizens of the future… Haji Dawood Adamjee
+                        </p>
+                        <div class="hero__btn">
+                          <a href="{% url 'donate' %}" class="btn hero-btn mb-10" data-animation="fadeInLeft" data-delay=".8s">
+                            Donate
+                          </a>
+                          <a href="{% url 'donate' %}" class="cal-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">
+                            <i class="flaticon-null"></i>
+                            <p>+92-309-537-4626</p>
+                          </a>
                         </div>
+                      </div>
                     </div>
+              
+                    <!-- Right column: image -->
+                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-10">
+                      <div class="hero__img" data-animation="fadeInUp" data-delay="1.2s">
+                        <img src="{% static 'assets/img/logo/hania.jpeg' %}" alt="Educating Children" class="img-fluid">
+                      </div>
+                    </div>
+              
+                  </div>
                 </div>
-            </div>
+              </div>
+              
             <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInUp" data-delay=".6s">Our Helping to<br> the world.</h1>
-                                <P data-animation="fadeInUp" data-delay=".8s" > “Life’s most persistent and urgent question is, What are you doing for 
-                                    others?”  
-                                    Martin Luther King, Jr. </P>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn">
-                                    <a href="{%url 'donate'%}" class="btn hero-btn mb-10"  data-animation="fadeInLeft" data-delay=".8s">Donate</a>
-                                    <a href="{%url 'donate'%}" class="cal-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">
-                                        <i class="flaticon-null"></i>
-                                        <p>  +92-309-537-4626</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
     <!-- slider Area End-->
@@ -65,8 +58,8 @@
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-80">
                         <span>What we are doing</span>
-                        <h2>We are on a mission provide Special Children with the dignity &amp;
-                            respect they deserve</h2>
+                        <h2>We Aim to Provide Special Children with the Dignity  &amp;
+                            Respect They Deserve</h2>
                     </div>
                 </div>
             </div>
@@ -78,8 +71,8 @@
                       <i class="fas fa-utensils fa-3x"></i>
                     </div>
                     <div class="cat-cap">
-                      <h5><a href="services.html">Food Security</a></h5>
-                      <p>Full Circle ensures every child has access to nutritious meals through community kitchens, school‑meal programs, and emergency food packs.</p>
+                      <h5><a href="services.html">Nutritions</a></h5>
+                      <p>Full Circle ensures every child has access to nutritious meals through school‑meal programs, and educating their parents about the nutrional needs of these special children.</p>
                     </div>
                   </div>
                 </div>
@@ -91,8 +84,8 @@
                       <i class="fas fa-hand-holding-medical fa-3x"></i>
                     </div>
                     <div class="cat-cap">
-                      <h5><a href="services.html">Healthcare</a></h5>
-                      <p>We partner with local clinics to provide free check‑ups, vaccinations, and health education so children can grow strong and stay well.</p>
+                      <h5><a href="services.html">Therapy</a></h5>
+                      <p>We partner with local clinics to provide free check‑ups, vaccinations, dental care and health education so children can grow strong and stay well.</p>
                     </div>
                   </div>
                 </div>
@@ -104,8 +97,8 @@
                       <i class="fas fa-home fa-3x"></i>
                     </div>
                     <div class="cat-cap">
-                      <h5><a href="services.html">Safe Shelter</a></h5>
-                      <p>Through foster‑home support and community housing projects, we secure safe, stable living environments for vulnerable children.</p>
+                      <h5><a href="services.html">Therapy</a></h5>
+                      <p>Our team of Physical Speech & Cognitive Therapists provide therapy to the Children with the objective of making their lives dependent</p>
                     </div>
                   </div>
                 </div>
@@ -118,7 +111,7 @@
                     </div>
                     <div class="cat-cap">
                       <h5><a href="services.html">Education</a></h5>
-                      <p>Full Circle funds school fees, supplies, and after‑school tutoring so every child can learn, dream, and build a brighter future.</p>
+                      <p>Our dedicated staff of Special Education teachers impart essential education to the children with keeping their specific disabilities in mind.</p>
                     </div>
                   </div>
                 </div>
@@ -278,63 +271,97 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-12">
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="#"><img src="{%static 'assets/img/gallery/socialEvents1.png'%}" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="https://www.facebook.com/ 
-fullcirclepakistan"><h4>Donation is Hope</h4></a>
-                                <ul>
-                                    <li><i class="far fa-clock"></i>8:30 - 9:30am</li>
-                                    <li><i class="fas fa-sort-amount-down"></i>18.03.2022</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Lahore</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col-lg-9 col-md-12" style="margin-bottom: 1.5rem;">
+                  <!-- single-job-content -->
+                  <div class="single-job-items mb-30">
+                    <div class="job-items" style="display: flex; align-items: center; gap: 1.5rem;">
+                      
+                      <div class="company-img" style="flex: 0 0 120px; height: 120px; overflow: hidden; border-radius: 8px;">
+                        <a href="#">
+                          <img
+                            src="{% static 'assets/img/gallery/hope.jpg' %}"
+                            alt="Donation is Hope"
+                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                          >
+                        </a>
+                      </div>
+                      
+                      <div class="job-tittle">
+                        <a href="https://www.facebook.com/fullcirclepakistan">
+                          <h4 style="margin: 0; font-size: 1.25rem; line-height: 1.2;">Donation is Hope</h4>
+                        </a>
+                        <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; gap: 1rem; font-size: 0.9rem; color: #555;">
+                          <li><i class="far fa-clock"></i> 8:30 – 9:30 am</li>
+                          <li><i class="fas fa-sort-amount-down"></i> 18.03.2022</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Lahore</li>
+                        </ul>
+                      </div>
+                      
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-9 col-md-12">
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="#"><img src="{% static 'assets/img/gallery/socialEvents2.png'%}" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="https://www.facebook.com/ 
-fullcirclepakistan"><h4>A hand for Children</h4></a>
-                                <ul>
-                                    <li><i class="far fa-clock"></i>8:30 - 9:30am</li>
-                                    <li><i class="fas fa-sort-amount-down"></i>15.03.2023</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Karachi</li>
-                                </ul>
-                            </div>
-                        </div>
+              
+                <div class="col-lg-9 col-md-12" style="margin-bottom: 1.5rem;">
+                  <!-- single-job-content -->
+                  <div class="single-job-items mb-30">
+                    <div class="job-items" style="display: flex; align-items: center; gap: 1.5rem;">
+                      
+                      <div class="company-img" style="flex: 0 0 120px; height: 120px; overflow: hidden; border-radius: 8px;">
+                        <a href="#">
+                          <img
+                            src="{% static 'assets/img/gallery/newhope.jpg' %}"
+                            alt="A hand for Children"
+                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                          >
+                        </a>
+                      </div>
+                      
+                      <div class="job-tittle">
+                        <a href="https://www.facebook.com/fullcirclepakistan">
+                          <h4 style="margin: 0; font-size: 1.25rem; line-height: 1.2;">A hand for Children</h4>
+                        </a>
+                        <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; gap: 1rem; font-size: 0.9rem; color: #555;">
+                          <li><i class="far fa-clock"></i> 8:30 – 9:30 am</li>
+                          <li><i class="fas fa-sort-amount-down"></i> 15.03.2023</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Karachi</li>
+                        </ul>
+                      </div>
+                      
                     </div>
+                  </div>
                 </div>
+              
                 <div class="col-lg-9 col-md-12">
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="#"><img src="{%static 'assets/img/gallery/socialEvents3.png'%}" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="https://www.facebook.com/ 
-fullcirclepakistan"><h4>Help for Children</h4></a>
-                                <ul>
-                                    <li><i class="far fa-clock"></i>8:30 - 9:30am</li>
-                                    <li><i class="fas fa-sort-amount-down"></i>08.01.2024</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Islamabad</li>
-                                </ul>
-                            </div>
-                        </div>
+                  <!-- single-job-content -->
+                  <div class="single-job-items mb-30">
+                    <div class="job-items" style="display: flex; align-items: center; gap: 1.5rem;">
+                      
+                      <div class="company-img" style="flex: 0 0 120px; height: 120px; overflow: hidden; border-radius: 8px;">
+                        <a href="#">
+                          <img
+                            src="{% static 'assets/img/gallery/friend.jpg' %}"
+                            alt="Help for Children"
+                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                          >
+                        </a>
+                      </div>
+                      
+                      <div class="job-tittle">
+                        <a href="https://www.facebook.com/fullcirclepakistan">
+                          <h4 style="margin: 0; font-size: 1.25rem; line-height: 1.2;">Help for Children</h4>
+                        </a>
+                        <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; gap: 1rem; font-size: 0.9rem; color: #555;">
+                          <li><i class="far fa-clock"></i> 8:30 – 9:30 am</li>
+                          <li><i class="fas fa-sort-amount-down"></i> 08.01.2024</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Islamabad</li>
+                        </ul>
+                      </div>
+                      
                     </div>
+                  </div>
                 </div>
+              </div>
+              
             </div>
         </div>
     </section>
