@@ -12,7 +12,8 @@ def blog(request):
 
 def blog_details(request):
     return render(request, 'templates/blog_details.html')
-
+def transparency(request):
+    return render(request, 'templates/transparency.html')
 # app/views.py
 from django.conf import settings
 from django.core.mail import send_mail

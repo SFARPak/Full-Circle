@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="container my-5">
+    <h2 class="mb-4">Transparency</h2>
+    <p>
+      For the last 3 years, Full Circle Foundation has maintained impeccable records and
+      controlled expenses. The Auditors Annual Reports shown below are proof of our
+      commitment to total transparency and full disclosure.
+    </p>
+
+    <!-- PDF #1 -->
+    <div class="mb-5">
+      <h5>Auditors Annual Report 2022</h5>
+      <iframe
+        src="{% static 'assets/docs/audit_report_2022.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/audit_report_2022.pdf' %}" 
+          download
+        >
+          Download 2022 Report
+        </a>
+      </p>
+    </div>
+
+    <!-- PDF #2 -->
+    <div class="mb-5">
+      <h5>Auditors Annual Report 2023</h5>
+      <iframe
+        src="{% static 'assets/docs/audit_report_2023.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/audit_report_2023.pdf' %}" 
+          download
+        >
+          Download 2023 Report
+        </a>
+      </p>
+    </div>
+
+    <!-- PDF #3 -->
+    <div class="mb-5">
+      <h5>Auditors Annual Report 2024</h5>
+      <iframe
+        src="{% static 'assets/docs/audit_report_2024.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/audit_report_2024.pdf' %}" 
+          download
+        >
+          Download 2024 Report
+        </a>
+      </p>
+    </div>
+
+    <div></div>
+     <h2 class="mb-4">Annual Progress</h2>
+    <p>
+      For the last 3 years, our progress::
+    </p>
+     <!-- PDF #1 -->
+    <div class="mb-5">
+      <h5>Annual Progress 2022</h5>
+      <iframe
+        src="{% static 'assets/docs/annual_progress_2022.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/annual_progress_2022.pdf' %}" 
+          download
+        >
+          Annual Progress 2022 
+        </a>
+      </p>
+    </div>
+
+    <!-- PDF #2 -->
+    <div class="mb-5">
+      <h5>Auditors Annual Report 2023</h5>
+      <iframe
+        src="{% static 'assets/docs/annual_progress_2023.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/annual_progress_2023.pdf' %}" 
+          download
+        >
+          Download  Annual Progress 2023 Report
+        </a>
+      </p>
+    </div>
+
+    <!-- PDF #3 -->
+    <div class="mb-5">
+      <h5>Auditors Annual Report 2024</h5>
+      <iframe
+        src="{% static 'assets/docs/annual_progress_2024.pdf' %}"
+        width="100%"
+        height="600px"
+        style="border:1px solid #ddd;"
+      ></iframe>
+      <p class="mt-2">
+        <a 
+          href="{% static 'assets/docs/annual_progress_2024.pdf' %}" 
+          download
+        >
+          Download Annual Progress 2024 Report
+        </a>
+      </p>
+    </div>
+
+  </div>
+{% endblock %}
