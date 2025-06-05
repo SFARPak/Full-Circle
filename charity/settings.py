@@ -1,4 +1,4 @@
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -59,8 +59,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'charity.wsgi.application'
 
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [ BASE_DIR / 'static' ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'public/static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ BASE_DIR / 'static' ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media')
+MEDIA_URL = '/media/'
+
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
