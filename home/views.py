@@ -2,18 +2,18 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'templates/index.html')
+    return render(request, 'home/index.html')
 
 def about(request):
-    return render(request, 'templates/about.html')
+    return render(request, 'home/about.html')
 
 def blog(request):
-    return render(request, 'templates/blog.html')
+    return render(request, 'home/blog.html')
 
 def blog_details(request):
-    return render(request, 'templates/blog_details.html')
+    return render(request, 'home/blog_details.html')
 def transparency(request):
-    return render(request, 'templates/transparency.html')
+    return render(request, 'home/transparency.html')
 # app/views.py
 from django.conf import settings
 from django.core.mail import send_mail
@@ -52,10 +52,10 @@ def contact_view(request):
     else:
         form = ContactForm()
 
-    return render(request, 'templates/contact.html', {'form': form})
+    return render(request, 'home/contact.html', {'form': form})
 
 def elements(request):
-    return render(request, 'templates/elements.html')
+    return render(request, 'home/elements.html')
 
 
 def events(request):
@@ -82,11 +82,11 @@ def events(request):
         },
         # Add more video entries as needed
     ]
-    return render(request, 'templates/events.html', {'videos': videos})
+    return render(request, 'home/events.html', {'videos': videos})
 
 def program(request):
-    return render(request, 'templates/program.html')
+    return render(request, 'home/program.html')
 def support(request):
-    return render(request, 'templates/support.html')
+    return render(request, 'home/support.html')
 def donate(request):
-    return render(request, 'templates/donate.html')
+    return render(request, 'home/donate.html')
